@@ -1,21 +1,23 @@
-<div class="row text-center">
-    <div class="col">
-        <h1>Contador</h1>
-        <h2>{{contador}}</h2>
+<div class="container">
+    <div class="row text-center">
+        <div class="col mt-4">
+            <h1>Contador</h1>
+            <h2>{{contador}}</h2>
+        </div>
     </div>
-</div>
 
-<div class="row text-center">
-    <div class="col">
-        <button (click)="sumar()" class="btn btn-primary">Sumar</button>
-        <button (click)="restar()" class="btn btn-info">Restar</button>
+    <div class="row text-center">
+        <div class="col">
+            <button (click)="sumar()" class="btn btn-primary">Sumar</button>
+            <button (click)="restar()" class="btn btn-info">Restar</button>
+        </div>
     </div>
-</div>
 
-<hr>
+    <hr>
 
-<div class="row text-center">
-    <div class="col">
-        <app-hijo [contador]="contador" (cambioContador)="contador = $event"></app-hijo>
+    <div class="row text-center">
+        <div class="col">
+            <app-hijo class="mt-4"></app-hijo>
+        </div>
     </div>
 </div>
